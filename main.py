@@ -2,15 +2,32 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route('/')
-def index():
-  return '<h1>Test Strings</h1>'
+posts = [
+    {
+        'dog': 'snoots',
+        'toy': 'ball',
+        'attribute': 'ugly',
+        'food': 'bannana'
+    },
+    {
+        'dog': 'buddy',
+        'toy': 'burger',
+        'attribute': 'fat',
+        'food': 'chips'
+    }
+]
 
-@app.route('/about')
+
+@app.route("/")
+@app.route("/home")
+
+def home():
+    return render_template('home.html', post=posts)
+
+@app.route("/about")
 def about():
-  return '<h1>This is our about page</h1>'
+    return render_template('about.html', title='About')
 
-# app.run(host='0.0.0.0', port=81)
 
 if __name__ == '__main__':
     app.run(debug=True)

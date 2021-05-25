@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% if title %}
+        <title>Dog Blog - {{ dog }}</title>
+    {% else %}
+        <title>Dog Blog</title>
+    {% endif % }
+</head>
+<body>
+    {% for post in posts %}
+        <h1>{{ post.dog }}</h1>
+        <p>toy: {{ post.toy }}</p>
+        <p>toy: {{ post.attribute }}</p>
+        <p>toy: {{ post.food }}</p>
+    {% endfor %}
+</body>
+</html>
