@@ -4,16 +4,18 @@ app = Flask(__name__)
 
 posts = [
     {
-        'dog': 'snoots',
-        'toy': 'ball',
-        'attribute': 'ugly',
-        'food': 'bannana'
+        'dog': 'Beau Martinez',
+        'title': 'Beau the snoot',
+        'toy': 'Ball',
+        'attribute': 'Ugly',
+        'food': 'Bananna'
     },
     {
-        'dog': 'buddy',
-        'toy': 'burger',
-        'attribute': 'fat',
-        'food': 'chips'
+        'dog': 'Buddy Gomez',
+        'title': 'Buddington',
+        'toy': 'Burgers',
+        'attribute': 'Fat',
+        'food': 'Chips'
     }
 ]
 
@@ -22,7 +24,7 @@ posts = [
 @app.route("/home")
 
 def home():
-    return render_template('home.html', post=posts)
+    return render_template('home.html', posts=posts)
 
 @app.route("/about")
 def about():
