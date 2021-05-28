@@ -17,26 +17,33 @@
     {% endif %}
 </head>
 <body>
-    <header class="site-header">
-      <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
-        <div class="container">
-          <a class="navbar-brand mr-4" href="/">Flask Blog</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarToggle">
-            <div class="navbar-nav mr-auto">
-              <a class="nav-item nav-link" href="/">Home</a>
-              <a class="nav-item nav-link" href="/about">About</a>
+   <header class="site-header">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Scaffolding app</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+               aria- controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" >
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-item nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item nav-link" href="/about">About</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-item nav-link" href="/login">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item nav-link" href="/register">Register</a>
+                </li>
+              </ul>
             </div>
-            <!-- Navbar Right Side -->
-            <div class="navbar-nav">
-              <a class="nav-item nav-link" href="/login">Login</a>
-              <a class="nav-item nav-link" href="/register">Register</a>
-            </div>
-          </div>
-        </div>
-      </nav>
+          </nav>
     </header>
     <main role="main" class="container">
       <div class="row">
@@ -46,12 +53,12 @@
         <div class="col-md-4">
           <div class="content-section">
             <h3>Our Sidebar</h3>
-            <p class='text-muted'>You can put any information here you'd like.
+            <p class='text-muted'>Scaffold application.
               <ul class="list-group">
-                <li class="list-group-item list-group-item-light">Latest Posts</li>
-                <li class="list-group-item list-group-item-light">Announcements</li>
-                <li class="list-group-item list-group-item-light">Calendars</li>
-                <li class="list-group-item list-group-item-light">etc</li>
+                <li class="list-group-item list-group-item-light">Enter new scaffold</li>
+                <li class="list-group-item list-group-item-light">Edit Scaffold</li>
+                <li class="list-group-item list-group-item-light">Export</li>
+                <li class="list-group-item list-group-item-light">Admin</li>
               </ul>
             </p>
           </div>
